@@ -19,7 +19,9 @@ const App = () => {
   return (
     <> 
     
-      {userData && <Nav />}
+{/*       {userData && <Nav />} */}
+      {userData && location.pathname !== "/login" && <Nav />}
+
       <Routes>
 
 {/*         <Route path="/login" 
