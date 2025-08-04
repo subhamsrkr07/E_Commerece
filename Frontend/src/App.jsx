@@ -22,7 +22,7 @@ const App = () => {
       {userData && <Nav />}
       <Routes>
 
-        <Route path="/login" 
+        <Route path="/Login" 
         element={
         userData?(<Navigate to={location.state?.from || "/"}/>)
           :(<Login/>)
