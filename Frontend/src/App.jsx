@@ -19,8 +19,7 @@ const App = () => {
   return (
     <> 
     
-{/*       {userData && <Nav />} */}
-      {userData && location.pathname !== "/login" && <Nav />}
+      {userData && <Nav />}
 
       <Routes>
 
