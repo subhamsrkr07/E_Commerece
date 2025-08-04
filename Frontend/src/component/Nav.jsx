@@ -59,8 +59,8 @@ const Nav = () => {
         {!userData && <CgProfile className='w-[30px] h-[30px] text-[#000000] cursor-pointer'  onClick={() => setprofile(prev => !prev)}/>}
         {userData && <div className='w-[30px] h-[30px] bg-[#080808] text-[white] rounded-full 
           flex items-center justify-center cursor-pointer' onClick={() => setprofile(prev => !prev)}>
-          {userData?.name.slice(0, 1)}
-{/*           {userData?.name?.slice(0, 1)} */}
+{/*           {userData?.name.slice(0, 1)} */}
+          {userData?.name?.slice(0, 1)}
 
         </div>}
 
