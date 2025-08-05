@@ -24,16 +24,16 @@ function UserContext({children}){
         }
     }
     
-    // useEffect(()=>{
-    //     getCurrentUser()
-    // },[])
+    useEffect(()=>{
+        getCurrentUser()
+    },[])
 
-    useEffect(() => {
-  // Only call getCurrentUser if there's no user data yet
-  if (!userData) {
-    getCurrentUser();
-  }
-}, [userData]);
+//     useEffect(() => {
+//   // Only call getCurrentUser if there's no user data yet
+//   if (!userData) {
+//     getCurrentUser();
+//   }
+// }, [userData]);
 
     
     
