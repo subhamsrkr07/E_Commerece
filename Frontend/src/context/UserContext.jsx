@@ -28,15 +28,7 @@ function UserContext({children}){
         getCurrentUser()
     },[])
 
-//     useEffect(() => {
-//   // Only call getCurrentUser if there's no user data yet
-//   if (!userData) {
-//     getCurrentUser();
-//   }
-// }, [userData]);
 
-    
-    
     
     let value = {
         userData,setUserData,getCurrentUser
