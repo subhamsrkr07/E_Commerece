@@ -3,7 +3,8 @@ import User from "../model/userModel.js"
 
 export const getCurrentUser =async(req,res)=>{
     try {
-        
+        console.log("Cookies received:", req.cookies);
+
         let user = await User.findById(req.userId).select("-password")
         if(!user){
             return res.status(400).json({message:"user was undifined"})
