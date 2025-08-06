@@ -23,13 +23,13 @@ const App = () => {
 
       <Routes>
 
-        <Route path="/login" 
+{/*         <Route path="/login" 
         element={
         userData?(<Navigate to={location.state?.from || "/"}/>)
           :(<Login/>)
-      } />
+      } /> */}
 
-{/*          <Route path="/login" element={<Login/>}/> */}
+         <Route path="/login" element={<Login/>}/>
 
         <Route path="/signup"
          element={userData?(<Navigate to={location.state?.from || "/"}/>)
